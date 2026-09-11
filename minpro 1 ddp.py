@@ -3,9 +3,9 @@ nomor_antrian = 1
 
 while True:
     print("---- Menu antrean laundy lovely ----")
-    print("1. Tambah Antrean")
-    print("2. Tampilkan Antrean")
-    print("3. Hapus Antrean")
+    print("1. Tambah antrean")
+    print("2. Tampilkan antrean")
+    print("3. Hapus antrean")
     print("4. Keluar")
 
     pilih = input("Pilih menu: ")
@@ -13,7 +13,7 @@ while True:
     if pilih == "1":
         nama = input("Masukkan nama: ")
     
-        print("jenis layanan yang tersedia: ")
+        print("Jenis layanan yang tersedia: ")
         print("1. Cuci Kering")
         print("2. Cuci + Setrika")  
         print("3. Express")
@@ -49,13 +49,13 @@ while True:
         data = (nomor_antrian, nama, jenis_layanan, berat, estimasi_biaya, waktu)
         antrian.append(data)
 
-        print("=== Antrian berhasil ditambahkan ===")
-        print("Nomor Antrian      : ", nomor_antrian)
-        print("Nama Pelanggan     : ", nama)
-        print("Jenis Layanan      : ", jenis_layanan)
-        print("Berat Pakaian      : ", berat, "kg")
-        print("Estimasi Biaya     :  Rp", int(estimasi_biaya))
-        print("Estimasi Waktu     : ", waktu)
+        print("=== Antrean berhasil ditambahkan ===")
+        print("Nomor antrean      : ", nomor_antrian)
+        print("Nama pelanggan     : ", nama)
+        print("Jenis layanan      : ", jenis_layanan)
+        print("Berat pakaian      : ", berat, "kg")
+        print("Estimasi biaya     :  Rp", int(estimasi_biaya))
+        print("Estimasi waktu     : ", waktu)
         print("=====================================")
 
         nomor_antrian += 1
@@ -65,27 +65,27 @@ while True:
             print("Belum ada antrean laundry")
 
         else:
-            print("---- Daftar Antrian Laundry Lovely ----")
+            print("---- Daftar antrean Laundry Lovely ----")
 
             for data in antrian:
-                print("Nomor Antrian      : ", data[0])
-                print("Nama Pelanggan     : ", data[1])
-                print("Jenis Layanan      : ", data[2])
-                print("Berat Pakaian      : ", data[3], "kg")
-                print("Estimasi Biaya     :  Rp", int(data[4]))
-                print("Estimasi Waktu     : ", data[5])
+                print("Nomor antrean      : ", data[0])
+                print("Nama pelanggan     : ", data[1])
+                print("Jenis layanan      : ", data[2])
+                print("Berat pakaian      : ", data[3], "kg")
+                print("Estimasi biaya     :  Rp", int(data[4]))
+                print("Estimasi waktu     : ", data[5])
                 print("================================")
 
     elif pilih == "3":
         if not antrian:
             print("Belum ada antrean laundry")
         else:
-            nomor = int(input("Masukkan nomor antrian: "))
+            nomor = int(input("Masukkan nomor antrean: "))
 
             for data in antrian:
                 if data[0] == nomor:
                     antrian.remove(data)
-                    print("Antrian berhasil dihapus")
+                    print("Antrean berhasil dihapus")
                     break
 
     elif pilih == "4":
