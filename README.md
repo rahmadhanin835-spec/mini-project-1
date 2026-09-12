@@ -1,22 +1,28 @@
-# mini-project-1
+# mini-project-1-Nabilah Rahmadhani
 
-pada kode diatas, terdapat antrian dan nomor_antrian. kode antrian merupakan list kosong yang akan menjadi database sementara untuk menyimpan semua antrean pelanggan. setiap antrian disimpan sebagai tuple. lalu kode nomor_antrian merupakan variabel penghitung, dimulai dari satu yang akan terus bertambah setiap ada antrean baru yang ditambahkan.
+flowchart
 
-kode while true membuat program terus berjalan dalam bentuk perulangan sampai ada perintah break (menu 4). setiap perulangan, menu dicetak ulang, lalu program menungu input pilihan dari user(string "1","2" di variabel pilih. 
+alur flowchart dimulai dari proses pemberian nilai antrean, kemudian menampilkan menu pilihan. pengguna dapat memilih untuk menambah, menampilkan, atau menghapus antrean. setelah proses selesai, program akan kembali ke menu utama. jika pengguna memilih keluar, program berakhir
 
-saat user memilih "1", program akan meminta nama pelanggan, lalu menampilkan daftar 3 jenis layanan. layanan tersebut akan menyimpan pilihan user(string)
 
-conditional statement tersebut akan memetakan pilihan angka ketiga variabel: nama layanan, harga, dan estimasi waktu
-jika input tidak sesuai, ia akan masuk ke else yang akan menampilkan  error, lalu continue membuat program kembali ke awal while true lagi. hal tersebut akan mencegah program melanjutkan proses data yang tidak lengkap
+<img width="935" height="408" alt="Screenshot 2026-09-12 153937" src="https://github.com/user-attachments/assets/9eb03250-2619-47d9-bf8d-99540939fd54" />
+<img width="797" height="405" alt="Screenshot 2026-09-12 154007" src="https://github.com/user-attachments/assets/fd1e1a66-05cf-432a-8a95-8505670c8577" />
+<img width="789" height="390" alt="Screenshot 2026-09-12 154029" src="https://github.com/user-attachments/assets/6edaa606-0971-4b52-8fe1-fd0dc48e8529" />
 
-input nilai yang dimasukkan akan dicek apakah <= 0. kalau iya, akan diangap tidak valid.
+output/hasil
+1. tambah antrean
+<img width="283" height="275" alt="Screenshot 2026-09-12 154453" src="https://github.com/user-attachments/assets/52ee672c-f463-4334-a9d1-4be0274124a7" />
 
-semua data pelanggan akan digabung jadi satu tuple data dengan urutan tetap. kode antrian.append(data) akan menambahkan tuple ke dalam list antrian
 
-nomor_antrian berfungsi untuk menaikkan penghtungan agar antrean berikutnya mendapatkan nomor sesudah nomor sebelumnya
+2. tampilkan antrean
+<img width="285" height="187" alt="Screenshot 2026-09-12 154510" src="https://github.com/user-attachments/assets/0f9cfd67-4942-4f5a-a8ee-5d2743542446" />
 
-if not antrian: mengecek apakah list antrian kosong. kalau kosong, kode akan menampilkasn pesan. kalau ada isinya, program akan melakukan pengulangan. for data in antrian: seriap data adalah satu tuple antrean, lalu mencetak isinya satu persatu mengggunakan index tuple 
+3. hapus antrean
+<img width="310" height="109" alt="Screenshot 2026-09-12 154521" src="https://github.com/user-attachments/assets/5f9195ea-0caf-488a-8dbb-2e4a183ba946" />
 
-list akan dicek terlebih dahulu, apakah list kosong. proram akan mencari tuple denhan data[0] yang cocok sesuai input. jika ketemu, akan dihapus dengan .remove(data) lalu break dan keluar dari loop for
+4. keluar
+<img width="382" height="94" alt="Screenshot 2026-09-12 154531" src="https://github.com/user-attachments/assets/be09f8d0-ae38-41b2-b976-f1bb48afa392" />
 
-break disini menghentikan while true dipaling luar, sehingga program akan berakhir. namun, ada kasus kalau user mengetik menu selain "1" - "4", akan menambilpkan pesan "pilihan menu tidak tersedia"
+program ini merupakan sistem antrian laundry, yang dimana user dapat menambahkan, melihat, dan menghapus antrean.  Alur dimulai ketika pengguna memilih opsi pertama untuk menambahkan antrean baru dengan memasukkan nama pelanggan, memilih jenis layanan, dan menginput berat pakaian. Berdasarkan input tersebut, sistem secara otomatis menerbitkan nomor antrean, menghitung total estimasi biaya, serta menentukan estimasi waktu pengerjaan.
+
+Setelah data tersimpan, pengguna dapat memilih opsi kedua untuk menampilkan daftar antrean, di mana sistem memanggil kembali keseluruhan antrean yang pernah ditambahkan tersebut. Selanjutnya pada opsi ketiga, pengguna dapat menghapus antrean dengan memasukkan nomor antrean yang direspons sistem dengan menghapus data tersebut dari data sementara dan menampilkan pesan antrean telah terhapus. Rangkaian proses diakhiri pada saat pengguna memilih opsi keempat untuk keluar, yang menghentikan perulangan program dan menampilkan pesan terima kasih penutup.
